@@ -10,4 +10,4 @@ main() { (( ${#} < 1 )) && echo "Usage <file ext> ..." && exit 1;
 
     find . -type f \( "${EXP[@]}" \) -print0 | xargs -0 -r nvim
 
-}; main "$@"
+}; main "${@}"

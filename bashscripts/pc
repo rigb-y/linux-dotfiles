@@ -1,0 +1,9 @@
+#!/usr/bin/bash
+
+function die_maybe { 
+    if (( ${#} != 1 )); then echo "Usage: ./pc <message>" && exit 1; fi 
+}
+
+function main { die_maybe "${@}"
+    git add -A && git commit -m "${1}" && git push
+}; main "${@}"

@@ -1,0 +1,22 @@
+#!/usr/bin/bash
+
+# Usage: ./lcs [-f --full] [e_1, e_2, ..].
+
+main() { 
+    FULL_SET=0; [[ "${1}" == '-f' || "${1}" == "--full" ]] && FULL_SET=1; shift 1;
+
+    FIND=()
+    for EXT in "${@}"; do
+        FIND+=( -name "${EXT}" -o )
+    done
+
+    (( ${#} > 0 )) && unset "FIND[-1]"
+
+    if (( ${FULL_SET} )); then
+        find . -type f "${FIND[@]}" | xargs wc -l | sort -rn
+    else
+        TOTAL=$(find . -type f "${FIND[@]}" | xargs wc -l | sort -n | awk '{print $1}' | tail -1)
+        PWD=$(pwd)
+        echo "${TOTAL} total lines in ${PWD}" 
+    fi
+}; main "${@}"
