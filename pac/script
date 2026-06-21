@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+for package in $(cat ./packages); do
+	sudo pacman -Sy --noconfirm $package
+done
