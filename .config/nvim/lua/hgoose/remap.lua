@@ -3,6 +3,11 @@ local function map(mode, newkey, action)
     vim.keymap.set(mode, newkey, action)
 end
 
+-- COMMAND ALIASES
+vim.cmd[[
+    command! -nargs=1 B tjump <args>
+]]
+
 -- Set Leader
 vim.g.mapleader = " "
 
