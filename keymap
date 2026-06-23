@@ -1,0 +1,6 @@
+# Execute
+
+sudo localectl set-x11-keymap dvorak
+sudo localectl set-keymap dvorak
+
+setxkbmap us -v dvorak
