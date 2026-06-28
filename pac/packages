@@ -68,6 +68,7 @@ dbus-broker-units 37-3
 dbus-units 37-3
 dconf 0.49.0-1
 debugedit 5.3-1
+debuginfod 0.195-1
 default-cursors 3-1
 desktop-file-utils 0.28-1
 device-mapper 2.03.41-1
@@ -412,6 +413,7 @@ libmanette 0.2.13-2
 libmatroska 1.7.1-2
 libmd 1.2.0-1
 libmfx 23.2.2-6
+libmicrohttpd 1.0.5-1
 libmm-glib 1.24.2-1
 libmng 2.0.3-4
 libmnl 1.0.5-2
@@ -981,6 +983,7 @@ uthash 2.3.0-3
 util-linux 2.42.2-1
 util-linux-libs 2.42.2-1
 v4l-utils 1.32.0-2
+valgrind 3.25.1-5
 vapoursynth 77-2
 variety 0.9.0-1
 vde2 2.3.3-8
