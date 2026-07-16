@@ -43,6 +43,7 @@ c-ares 1.34.6-1
 ca-certificates 20240618-1
 ca-certificates-mozilla 3.125-1
 ca-certificates-utils 20240618-1
+cabextract 1.11-3
 cairo 1.18.4-1
 cairomm 1.14.6-1
 cairomm-1.16 1.18.1-1
@@ -54,6 +55,7 @@ cmake 4.3.4-1
 cmark 0.31.2-1
 cmatrix 2.0-4
 colm 0.14.7-5
+compiler-rt 22.1.6-1
 confuse 3.3-5
 coreutils 9.11-1
 cpio 2.15-3
@@ -97,6 +99,7 @@ eglexternalplatform 1.2.1-1
 electron39 39.8.10-1
 elfutils 0.195-1
 enchant 2.8.15-2
+esbuild 0.28.1-1
 espeak-ng 1.52.0-1
 evince 1:48.4-1
 ex-vi-compat 2-1
@@ -323,6 +326,8 @@ libbpf 1.7.0-1
 libbs2b 3.1.0-10
 libbsd 0.12.2-2
 libbytesize 2.12-3
+libc++ 22.1.6-1
+libc++abi 22.1.6-1
 libcacard 2.8.1-1
 libcanberra 1:0.30+r2+gc0620e4-6
 libcap 2.78-1
@@ -591,6 +596,8 @@ llvm-julia-libs 18.1.7.4-3
 llvm-libs 22.1.6-1
 lm_sensors 1:3.6.2-1
 lmdb 0.9.35-1
+lorien-bin 0.6.0-1
+lorien-bin-debug 0.6.0-1
 lpsolve 5.5.2.14-1
 lua 5.5.0-2
 lua51 5.1.5-13
@@ -738,7 +745,6 @@ python-msgpack 1.1.2-2
 python-numpy 2.4.6-1
 python-packaging 26.2-1
 python-pillow 12.2.0-1
-python-pip 26.1.2-1
 python-pkg_resources 81.0.0-1
 python-platformdirs 4.10.0-1
 python-pycparser 3.00-1
@@ -882,6 +888,8 @@ rofi 2.0.0-1
 rpcbind 1.2.9-1
 rtkit 0.14-1
 rubberband 4.0.0-2
+rust 1:1.96.1-1
+rust-wasm 1:1.96.1-1
 rutabaga-ffi 0.1.75-1
 scour 0.38.2-6
 sddm 0.21.0-7
@@ -1032,14 +1040,22 @@ volume_key 0.3.12-12
 vte-common 0.84.0-1
 vte3 0.84.0-1
 vulkan-icd-loader 1.4.350.1-1
+wasm-bindgen 0.2.126-1
+wasm-component-ld 0.5.26-1
+wasm-pack 0.15.0-1
 wayland 1.25.0-1
 webkitgtk-6.0 2.52.4-1
 webrtc-audio-processing-1 1.3-5
 wget 1.25.0-5
 which 2.25-1
+wine 11.12-1
+winetricks 20260125-2
 woff2 1.0.2-6
 wolfssl 5.9.1-1
+worker-build 0.8.3-1
+workerd 1.20260529.1-1
 wpa_supplicant 2:2.11-5
+wrangler 4.82.2-1
 x264 3:0.165.r3222.b35605a-2
 x265 4.2-2
 xcb-imdkit 1.0.9-1
