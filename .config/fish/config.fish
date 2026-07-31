@@ -23,6 +23,7 @@ set LIBGL_ALWAYS_SOFTWARE 1
 # xrandr --addmode eDP-1 1440x1080_100.00
 
 # USER DEFINED ALIASES
+alias fd="DISPLAY=:1"
 alias bmake="bear -- make"
 alias pixel="$HOME/Android/Sdk/emulator/emulator -avd Pixel -verbose"
 alias ws="nmcli dev wifi rescan"
@@ -324,3 +325,17 @@ set fish_pager_color_prefix white --bold --underline
 set fish_pager_color_progress brwhite --background=cyan
 set fish_color_search_match --background="#60AEFF"
 fish_add_path /home/datura/.spicetify
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+if test -f /home/angel/anaconda3/bin/conda
+    eval /home/angel/anaconda3/bin/conda "shell.fish" "hook" $argv | source
+else
+    if test -f "/home/angel/anaconda3/etc/fish/conf.d/conda.fish"
+        . "/home/angel/anaconda3/etc/fish/conf.d/conda.fish"
+    else
+        set -x PATH "/home/angel/anaconda3/bin" $PATH
+    end
+end
+# <<< conda initialize <<<
+

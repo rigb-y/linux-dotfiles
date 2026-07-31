@@ -44,6 +44,8 @@ vim.cmd[[
     let @a = "i\\textbf{\<Esc>Ea}\<Esc>"
     let @b = "^i\\item\<Space>bold\<M-Tab>\<Esc>sa\<BS>\<Esc>f:\<Ignore>i}\<Esc>h"
     let @c = "^i\\item\<Space>\<Esc>h"
+    let @d = "^f}\<Ignore>f{\<Ignore>i\<CR>\<Esc>"
+
 ]]
 
 -- vim.api.nvim_create_user_command("Colorschemes", function()

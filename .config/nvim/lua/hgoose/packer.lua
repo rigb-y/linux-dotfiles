@@ -17,12 +17,62 @@ return require('packer').startup(function(use)
     --         }
     --     }
     -- }
-    use('nvim-treesitter/nvim-treesitter', { run = ':TSUpdate' })
+    local treesitter_langs = {
+        "python",
+        "latex",
+        "c",
+        "lua",
+        "vim",
+        "vimdoc",
+        "query",
+        "html",
+        "php",
+        "css",
+        "cpp",
+    }
+
+    use({
+        "nvim-treesitter/nvim-treesitter",
+        branch = "main",
+        run = ":TSUpdate",
+
+        config = function()
+            local ts = require("nvim-treesitter")
+
+            ts.setup({
+                install_dir = vim.fn.stdpath("data") .. "/site",
+            })
+
+            ts.install(treesitter_langs)
+
+            vim.api.nvim_create_autocmd("FileType", {
+                pattern = {
+                    "python",
+                    "tex",
+                    "c",
+                    "lua",
+                    "vim",
+                    "help",
+                    "query",
+                    "html",
+                    "php",
+                    "css",
+                    "cpp"
+                },
+                callback = function()
+                    pcall(vim.treesitter.start)
+                end,
+            })
+        end,
+    })
+    -- use('nvim-treesitter/nvim-treesitter', { 
+    --     run = ':TSUpdate' 
+    -- })
     -- use('nvim-treesitter/playground')
     use('ThePrimeagen/harpoon')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
-    -- install without yarn or npm
+
     use({
         "iamcco/markdown-preview.nvim",
         run = function() vim.fn["mkdp#util#install"]() end,

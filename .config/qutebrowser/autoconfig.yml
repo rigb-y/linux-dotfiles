@@ -6,7 +6,5 @@
 
 config_version: 2
 settings:
-  colors.webpage.bg:
-    global: '#fff8dc'
-  scrolling.smooth:
-    global: true
+  content.pdfjs:
+    global: false

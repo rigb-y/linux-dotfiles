@@ -16,6 +16,8 @@ config.load_autoconfig(False)
 
 c.content.user_stylesheets = ['~/.config/qutebrowser/styles/dark.css']
 
+c.content.javascript.enabled = True
+
 c.colors.webpage.darkmode.enabled = False
 c.colors.webpage.darkmode.algorithm = 'lightness-cielab'
 c.colors.webpage.darkmode.policy.images = 'never'

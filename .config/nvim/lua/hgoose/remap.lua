@@ -3,11 +3,6 @@ local function map(mode, newkey, action)
     vim.keymap.set(mode, newkey, action)
 end
 
--- COMMAND ALIASES
-vim.cmd[[
-    command! -nargs=1 B tjump <args>
-]]
-
 -- Set Leader
 vim.g.mapleader = " "
 
@@ -85,3 +80,7 @@ vim.keymap.set('n', 'K', vim.lsp.buf.hover, { noremap = true, silent = true })
 --  Enable/Disable transparency script activations
 -- vim.cmd("autocmd VimEnter * silent !/home/datura/.config/nvim/scripts/disable_blur.sh >/dev/null 2>&1")
 -- vim.cmd("autocmd VimLeave * silent !/home/datura/.config/nvim/scripts/enable_blur.sh >/dev/null 2>&1")
+--
+vim.cmd[[
+    command! -nargs=1 B tjump <args>
+]]

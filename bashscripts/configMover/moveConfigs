@@ -104,6 +104,7 @@ then
 	sudo cp -R ~/.config/spotify ~/linux-dotfiles/.config/
 	sudo cp -R ~/.config/spicetify ~/linux-dotfiles/.config/
 	sudo cp -R ~/.config/vis ~/linux-dotfiles/.config/
+    sudo cp -R ~/.config/angel ~/linux-dotfiles/.config
 
 else
 	echo "Invalid Option"

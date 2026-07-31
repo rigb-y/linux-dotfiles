@@ -1,13 +1,24 @@
 snippet template
 #include <stdio.h>
-#include <string.h>
-#include <stdbool.h>
-#include <stdlib.h>
 #include <stddef.h>
-
+#include <stdio.h>
+#include <string.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
 
 int main(int argc, char** argv) {
-    
+    $1
+
     return EXIT_SUCCESS;
 }
+endsnippet
+
+snippet fnc "function box comment" i
+/**
+ * @brief $1
+ *
+ * @param
+ * @return
+ */
 endsnippet
