@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+mv $HOME/.config/angel/angel.conf $HOME/.config/angel/angel-test.conf
+mv $HOME/.config/angel/angel-real.conf $HOME/.config/angel/angel.conf
