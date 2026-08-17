@@ -1,0 +1,29 @@
+Config
+    { font = "xft:monospace:size=13"
+    , additionalFonts = []
+    , borderColor = "black"
+    , border = NoBorder
+    , bgColor = "white"
+    , fgColor = "black"
+    , alpha = 255
+    , position = TopSize C 100 18
+    , textOffset = 0
+    , iconOffset = -1
+    , lowerOnStart = True
+    , pickBroadest = False
+    , persistent = True
+    , hideOnStart = False
+    , iconRoot = "."
+    , allDesktops = True
+    , overrideRedirect = False
+
+    , commands =
+        [ Run PipeReader "/run/user/1000/angel-wspipe" "workspaces"
+        , Run Date "%H:%M" "date" 10
+        ]
+
+    , sepChar = "%"
+    , alignSep = "}{"
+
+    , template = " %workspaces% }{ %date% "
+    }
