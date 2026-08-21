@@ -1,4 +1,6 @@
 clear
+export EDITOR=nvim
+
 # neofetch
 # swww init
 # wlr-randr --output HDMI-A-1 --mode 1920x1080@119.878998
@@ -297,21 +299,22 @@ set -g theme_color_scheme zenburn
 
 set fish_color_autosuggestion "#969896"
 set fish_color_cancel -r
-set fish_color_command "#0782DE"
-set fish_color_comment "#f0c674"
+#set fish_color_command "#0782DE"
+set fish_color_command "#9700BD"
+set fish_color_comment "#9700BD"
 set fish_color_cwd "#008000"
 set fish_color_cwd_root red
-set fish_color_end "#b294bb"
+set fish_color_end "#9700BD"
 set fish_color_error "#fb4934"
 set fish_color_escape "#fe8019"
 set fish_color_history_current --bold
 set fish_color_host "#85AD82"
-set fish_color_host_remote yellow
-set fish_color_match --background=brblue
-set fish_color_normal normal
-set fish_color_operator "#fe8019"
-set fish_color_param "#81a2be"
-set fish_color_quote "#b8bb26"
+set fish_color_host_remote "#9700BD"
+set fish_color_match "#9700BD"
+set fish_color_normal "#9700BD"
+set fish_color_operator "#9700BD" 
+set fish_color_param "#9700BD" 
+set fish_color_quote "#115C1D"
 set fish_color_redirection "#d3869b"
 set fish_color_search_match bryellow background=brblack
 set fish_color_selection white --bold background=brblack
