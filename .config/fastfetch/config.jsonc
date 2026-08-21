@@ -3,7 +3,7 @@
         "type": "auto",        // Logo type: auto, builtin, small, file, etc.
         "source": "arch",      // Built-in logo name or file path
         "width": 45,           // Width in characters
-        "height": 35,          // Height in characters
+        "height": 15,          // Height in characters
         "padding": {
             "top": 0,          // Top padding
             "right": 0,        // Right padding
@@ -11,8 +11,8 @@
         },
 
         "color": {             // Override logo colors
-            "1": "#53009e",
-            "2": "#53009e"
+            "1": "#9700bd",
+            "2": "#9700bd"
         }
     },
 
