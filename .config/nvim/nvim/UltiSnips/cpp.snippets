@@ -1,0 +1,419 @@
+snippet head
+//***************************************************************************
+//
+//  $1 (file-name)
+//  CSCI 340 Assignment $2 (ass-no)
+//
+//  Created by Nate Warner z2004109
+//
+//***************************************************************************
+endsnippet
+snippet template
+#include <iostream> // For input/output tasks
+#include <iomanip> // For input/output manipulators
+#include <cstdlib> // For random, system, exit, EXIT_SUCCESS, EXIT_FAILURE, and malloc
+#include <cstdint> // For fixed width data types
+#include <unistd.h> // Posix API
+#include <typeinfo> // typeid(n).name()
+#include <cctype> // For character functions
+#include <algorithm> // Defined algorithms
+#include <iterator> // Iterator functions and types
+#include <string> // String class
+
+// Some macros
+#define a_sizeof(x) sizeof(x) / sizeof(x[0])
+#define SHOW(a) cout << a << endl;
+#define SHOW_AR(a) for (const auto& i : a) cout << i << " "; cout << endl;
+#define NOPOS -1
+#define LINE_BREAK cout << endl; for (int i = 0; i < 75; i++) cout << "-"; cout << endl;
+
+// Using
+using std::cout;
+using std::cin;
+using std::cerr;
+using std::endl;
+using std::string;
+
+int main(int argc, const char* argv[]) {
+
+	$1
+    
+    return EXIT_SUCCESS;
+}
+endsnippet
+
+snippet full
+
+//***************************************************************************
+//
+//  file-name
+//  CSCI 241 Assignment assignment-number
+//
+//  Created by name(s) and z-ID(s)
+//
+//***************************************************************************
+#include <iostream> // For input/output tasks
+#include <iomanip> // For input/output manipulators
+#include <cstdlib> // For random, system, exit, EXIT_SUCCESS, EXIT_FAILURE, and malloc
+#include <cstdint> // For fixed width data types
+#include <unistd.h> // Posix API
+#include <typeinfo> // typeid(n).name()
+#include <cctype> // For character functions
+#include <algorithm> // Defined algorithms
+#include <iterator> // Iterator functions and types
+#include <string> // String class
+
+// Some macros
+#define a_sizeof(x) sizeof(x) / sizeof(x[0])
+#define show(a) cout << a << endl;
+#define SHOW_AR(a) for (const auto& i : a) cout << i << " "; cout << endl;
+#define NOPOS -1
+#define LINE_BREAK cout << endl; for (int i = 0; i < 75; i++) cout << "-"; cout << endl;
+
+// Using
+using std::cout;
+using std::cin;
+using std::cerr;
+using std::endl;
+using std::string;
+
+int main(int argc, const char *argv[]) {
+
+    return EXIT_SUCCESS;
+}
+endsnippet
+
+snippet tmp
+#include <iostream> // For Input/OUtput tasks
+#include <iomanip> // For output manipulations
+#include <fstream> // For file operations
+#include <typeinfo> // For typeid().name()
+#include <cmath> // For mathematical functions
+#include <algorithm> // For defined algorithms
+#include <ctime> // For time functions
+#include <memory> // For smart pointers
+#include <cstring> // For c-string functions
+#include <cstdint> // For fixed width data types (like uint32_t)
+#include <sstream> // For string streams
+#include <iterator> // For iterator functions and such
+#include <numeric> // For partial sum
+#include <random> // For random stuff
+#include <chrono> // For time stuff
+#include <string> // For std::string 
+#include <array> // For std::array<T,n>
+#include <list> // For std::list<T>
+#include <vector> // For std::vector<T>
+#include <set> // For std::set<T, comp> 
+#include <map> // For std::map<T,T,comp>
+#include <cstdarg> // For va_list, va_start, va_arg and va_end (variadic functions)
+#include <functional> // For std::function<rv(T,T,...)>
+#include <initializer_list> // Used for init list function parameters
+#include <utility> // For std::pair, tuple, and std::move
+#include <new> // For new placement, bad_alloc, and nothrow
+#include <stdexcept> // For exception classes
+#include <exception> // Exception class
+#include <concepts> // concepts
+#include <ranges> // Ranges and views
+#include <span> // std::span
+#include <optional> // std::optional<T>
+#include <expected> // std::optional<T,E>
+#include <compare> // Spaceship
+#include <cctype>
+
+// -- Start UNIX Sys
+#include <cstdlib> // For random, system, exit, EXIT_SUCCESS, EXIT_FAILURE, and malloc
+#include <unistd.h> // For unix sys calls file stuff and sleep
+#include <cstdio> // C standard
+#include <fcntl.h> // O_WRONLY, open, etc...
+#include <sys/stat.h> // File stats
+#include <sys/types.h> // Types
+#include <dirent.h>
+#include <regex.h>
+#include <errno.h>
+#include <sys/wait.h> // wait system call
+// -- End UNIX Sys
+
+// -- Networking stuff
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <netdb.h>
+// -- End Networkin stuff
+
+#define a_sizeof(x) sizeof(x) / sizeof(x[0])
+#define SHOW(a) cout << a << endl;
+#define SHOW_AR(a) for (const auto& i : a) cout << i << " "; cout << endl;
+#define b(a) std::begin(a)
+#define e(a) std::end(a)
+
+
+using std::cout;
+using std::cin;
+using std::endl;
+using std::string;
+
+
+
+int main(int argc, const char* argv[]) {
+
+	$1
+
+    return EXIT_SUCCESS;
+}
+endsnippet
+
+snippet includes "known includes" i
+#include <iostream> // For Input/OUtput tasks
+#include <iomanip> // For output manipulations
+#include <fstream> // For file operations
+#include <typeinfo> // For typeid().name()
+#include <cstdlib> // For random, system, exit, EXIT_SUCCESS, EXIT_FAILURE, and malloc
+#include <cmath> // For mathematical functions
+#include <algorithm> // For defined algorithms
+#include <ctime> // For time functions
+#include <memory> // For smart pointers
+#include <cstring> // For c-string functions
+#include <cstdint> // For fixed width data types (like uint32_t)
+#include <sstream> // For string streams
+#include <iterator> // For iterator functions and such
+#include <numeric> // For partial sum
+#include <random> // For random stuff
+#include <chrono> // For time stuff
+#include <string> // For std::string 
+#include <array> // For std::array<T,n>
+#include <list> // For std::list<T>
+#include <vector> // For std::vector<T>
+#include <set> // For std::set<T, comp> 
+#include <map> // For std::map<T,T,comp>
+#include <cstdarg> // For va_list, va_start, va_arg and va_end (variadic functions)
+#include <functional> // For std::function<rv(T,T,...)>
+#include <initializer_list> // Used for init list function parameters
+#include <utility> // For std::pair, tuple, and std::move
+#include <new> // For new placement, bad_alloc, and nothrow
+#include <stdexcept> // For exception classes
+#include <exception> // Exception class
+#include <concepts> // concepts
+#include <ranges> // Ranges and views
+#include <span> // std::span
+#include <optional> // std::optional<T>
+#include <expected> // std::expected<T,E>
+#include <compare> // Spaceship
+#include <cctype>
+
+//-- Start UNIX Sys
+#include <unistd.h> // For unix sys calls file stuff and sleep
+#include <cstdio> // C standard
+#include <fcntl.h> // O_WRONLY, open, etc...
+#include <sys/stat.h> // File stats
+#include <sys/types.h> // Types
+#include <dirent.h>
+#include <regex.h>
+#include <errno.h>
+#include <sys/wait.h> // wait system call
+//-- End UNIX Sys
+
+// -- Networking stuff
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <arpa/inet.h> // htons, inet_addr, etc...
+#include <netdb.h>
+// -- End Networkin stuff
+endsnippet
+
+
+snippet remark
+/*<remark> 
+$1
+</remark>*/
+endsnippet
+
+snippet summary
+/*<summary> 
+$1
+</summary>*/
+endsnippet
+
+snippet nit
+/*<nit> 
+$1
+</nit>*/
+endsnippet
+
+snippet nt
+/*<note> 
+$1
+</note>*/
+endsnippet
+
+
+snippet fhead
+/**
+ * This first line is a brief description.
+ *
+ * The rest of the lines are a more detailed description of the
+ * function that outlines what it does and anything interesting about
+ * how it does it.
+ *
+ * @param x Description of the first parameter.
+ * @param y Description of the second parameter.
+ * @param z Description of the third parameter.
+ *
+ * @return This is where you describe the possible return values.
+ *
+ * @note This is how you can add an optional note about the function that
+ *    may be of interest to someone using it.
+ *
+ * @warning This is how you can add an optional warning to a user of the
+ *    function suitable for noting things like 'This function is not thread
+ *    safe' and so on.
+ *
+ * @bug This is how you can add an optional description of a known bug in the
+ *    function such as: This only works for positive values of z.
+ */
+endsnippet
+
+snippet fhead2
+/**
+ * This first line is a brief description.
+*
+ * @param x Description of the first parameter.
+ * @param y Description of the second parameter.
+ * @param z Description of the third parameter.
+ *
+ * @return This is where you describe the possible return values.
+ */
+endsnippet
+
+snippet seed
+unsigned seed = std::chrono::system_clock::now().time_since_epoch().count();
+endsnippet
+
+snippet hg
+#ifndef $1
+#define $1
+
+$2
+
+#endif
+endsnippet
+
+snippet exit
+exit(EXIT_FAILURE);
+endsnippet
+
+snippet vec "vector tmp" i
+#include <iostream>
+#include <vector>
+
+using std::cout;
+using std::endl;
+using std::vector;
+
+struct types {
+    template <typename T>
+        using matrix = vector<vector<T>>;
+};
+
+int main (int argc, char** argv) {
+
+    return 0;
+}
+endsnippet
+
+snippet half 
+#include <iostream>
+#include <utility>
+#include <vector>
+#include <string>
+#include <unordered_map>
+#include <queue>
+#include <utility>
+#include <cmath>
+#include <bitset>
+#include <array>
+#include <map>
+#include <limits>
+#include <numeric> // std::accumulate
+#include <climits> // INT_MAX, INT_MIN, ...
+#include <tuple>
+#include <unordered_set>
+#include <algorithm>
+#include <stack>
+#include <ranges>
+#include <cctype>
+using std::accumulate;
+using std::pair;
+using std::stack;
+using std::unordered_set;
+using std::tuple;
+using std::map;
+using std::array;
+using std::cout;
+using std::endl;
+using std::string;
+using std::vector;
+using std::unordered_map;
+using std::queue;
+using std::priority_queue;
+using std::bitset;
+
+typedef long long dword;
+
+template<typename T>
+using pset = unordered_set<T>;
+
+template<typename T, typename U, typename W=std::less<T>>
+using pq = priority_queue<T,U,W>;
+
+typedef priority_queue<int, vector<int>, std::greater<int>> I_MIN_HEAP;
+typedef priority_queue<int, vector<int>> I_MAX_HEAP;
+
+template<typename T>
+using lims = std::numeric_limits<T>;
+
+template<typename T, typename U>
+using pmap = unordered_map<T,U>;
+
+typedef vector<vector<int>> VII;
+typedef vector<int> VI;
+struct TreeNode;
+struct ListNode;
+typedef ListNode ln;
+typedef TreeNode tn;
+#define PB push_back
+
+
+int main(int argc, char** argv) {
+
+    return 0;
+}
+endsnippet
+
+snippet leet
+#include <bits/stdc++.h>
+using namespace std;
+
+int main(int argc, char** argv) {
+
+    return 0;
+}
+endsnippet
+
+snippet tn 
+struct TreeNode {
+    int val;
+    TreeNode *left;
+    TreeNode *right;
+    TreeNode() : val(0), left(nullptr), right(nullptr) {}
+    TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}
+    TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}
+};
+endsnippet
+
+snippet ln
+struct ListNode {
+    int val;
+    ListNode *next;
+    ListNode(int x) : val(x), next(NULL) {}
+};
+endsnippet
